@@ -3,6 +3,12 @@
     "flow-bin": "0.64.0",
     "flow-remove-types": "1.2.3",
     "flow-typed": "2.2.3",
-    "jsdoc": "3.5.5"
-  }
+    "jsdoc": "3.5.5",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
